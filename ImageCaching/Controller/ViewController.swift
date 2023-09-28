@@ -24,6 +24,10 @@ class ViewController: UIViewController {
     @IBAction func process(_ sender: Any) {
         print("🌴 engine start up")
         let manager = ImageCacheManager.downloadImage(url: URL(string: "http://www.artlogica.com.br/images/LogoArtLogica.png")!) { image, error in
+            DispatchQueue.main.async {
+                self.imageView.image = image
+            }
+            
             print("❌ error: \(error)")
         }
     }

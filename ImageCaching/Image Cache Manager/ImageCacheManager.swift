@@ -11,14 +11,13 @@ fileprivate let imageCache = NSCache<NSString, UIImage>()
 
 extension NSError {
     static func generalParsingError(domain: String) -> Error {
-        return NSError(domain: domain, code: 400, userInfo: [NSLocalizedDescriptionKey : NSLocalizedString("Error retrieving data", comment: "General Parsing Error Description")])
+        return NSError(domain: domain, code: 400, userInfo: [NSLocalizedDescriptionKey : NSLocalizedString("ImageCacheManager error retrieving data", comment: "General Parsing Error Description")])
     }
 }
 
 class ImageCacheManager {
     
     //MARK: - Public
-    
     static func downloadImage(url: URL, completion: @escaping (_ image: UIImage?, _ error: Error? ) -> Void) {
         if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString) {
             completion(cachedImage, nil)
