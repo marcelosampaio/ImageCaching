@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85426B862AC5FC7B00C44F57 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85426B852AC5FC7B00C44F57 /* ImageCacheManager.swift */; };
 		85ED8E5A2AC49F5200023798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ED8E592AC49F5200023798 /* AppDelegate.swift */; };
 		85ED8E5C2AC49F5200023798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ED8E5B2AC49F5200023798 /* SceneDelegate.swift */; };
 		85ED8E5E2AC49F5200023798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ED8E5D2AC49F5200023798 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85426B852AC5FC7B00C44F57 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 		85ED8E562AC49F5200023798 /* ImageCaching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCaching.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85ED8E592AC49F5200023798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85ED8E5B2AC49F5200023798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85426B872AC5FE2E00C44F57 /* Image Cache Manager */ = {
+			isa = PBXGroup;
+			children = (
+				85426B852AC5FC7B00C44F57 /* ImageCacheManager.swift */,
+			);
+			path = "Image Cache Manager";
+			sourceTree = "<group>";
+		};
 		85ED8E4D2AC49F5200023798 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		85ED8E582AC49F5200023798 /* ImageCaching */ = {
 			isa = PBXGroup;
 			children = (
+				85426B872AC5FE2E00C44F57 /* Image Cache Manager */,
 				85ED8E6F2AC49F9200023798 /* UI */,
 				85ED8E6E2AC49F7400023798 /* Controller */,
 				85ED8E6D2AC49F6200023798 /* Root */,
@@ -162,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85426B862AC5FC7B00C44F57 /* ImageCacheManager.swift in Sources */,
 				85ED8E5E2AC49F5200023798 /* ViewController.swift in Sources */,
 				85ED8E5A2AC49F5200023798 /* AppDelegate.swift in Sources */,
 				85ED8E5C2AC49F5200023798 /* SceneDelegate.swift in Sources */,
