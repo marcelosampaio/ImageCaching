@@ -27,10 +27,14 @@ class ViewController: UIViewController {
             DispatchQueue.main.async {
                 self.imageView.image = image
             }
-            
             print("❌ error: \(error)")
         }
     }
+    
+    @IBAction func processWithExtension(_ sender: Any) {
+        self.imageView.setImage(url: URL(string: "http://www.artlogica.com.br/images/LogoArtLogica.png")!)
+    }
+    
     
     @IBAction func imageToDefault(_ sender: Any) {
         imageView.image = UIImage(named: defaultImage)

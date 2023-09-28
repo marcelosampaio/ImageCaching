@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -33,7 +34,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aja-Pj-pIx">
-                                <rect key="frame" x="110.66666666666669" y="492.66666666666669" width="172" height="35.000000000000057"/>
+                                <rect key="frame" x="110.66666666666669" y="608" width="172" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="XPV-On-OKD"/>
                                 </constraints>
@@ -43,8 +44,8 @@
                                     <action selector="imageToDefault:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2fp-aC-luB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssh-uY-ljr">
-                                <rect key="frame" x="89.666666666666686" y="535" width="214" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssh-uY-ljr">
+                                <rect key="frame" x="89" y="651" width="214" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="RM4-Ge-kJt"/>
                                 </constraints>
@@ -54,14 +55,27 @@
                                     <action selector="cleanCacheAndMemory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YmY-5t-6tG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JU1-bp-aKE">
+                                <rect key="frame" x="69" y="466.66666666666669" width="255" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="u4k-ff-fZb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Carregar imagem via extensão"/>
+                                <connections>
+                                    <action selector="processWithExtension:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ag-Vo-wZ1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NAr-GY-vqt" secondAttribute="trailing" constant="16" id="25q-eL-s2f"/>
                             <constraint firstItem="aja-Pj-pIx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2yZ-n6-V6m"/>
+                            <constraint firstItem="JU1-bp-aKE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="51F-A5-I2M"/>
+                            <constraint firstItem="JU1-bp-aKE" firstAttribute="top" secondItem="MTj-e1-RWj" secondAttribute="bottom" constant="23.329999999999998" id="5Jz-KK-QEN"/>
                             <constraint firstItem="MTj-e1-RWj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ey3-Ct-No8"/>
-                            <constraint firstItem="aja-Pj-pIx" firstAttribute="top" secondItem="MTj-e1-RWj" secondAttribute="bottom" constant="49.329999999999998" id="KDk-Qk-INi"/>
+                            <constraint firstItem="aja-Pj-pIx" firstAttribute="top" secondItem="MTj-e1-RWj" secondAttribute="bottom" constant="164.33333333333331" id="KDk-Qk-INi"/>
                             <constraint firstItem="MTj-e1-RWj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NGm-Bz-Mqb"/>
                             <constraint firstItem="NAr-GY-vqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cq0-Ke-Xwy"/>
                             <constraint firstItem="ssh-uY-ljr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dTh-aZ-pAq"/>

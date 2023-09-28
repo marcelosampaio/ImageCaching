@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		85426B862AC5FC7B00C44F57 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85426B852AC5FC7B00C44F57 /* ImageCacheManager.swift */; };
+		85426B8B2AC612DC00C44F57 /* UIImageView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85426B8A2AC612DC00C44F57 /* UIImageView+Utils.swift */; };
 		85ED8E5A2AC49F5200023798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ED8E592AC49F5200023798 /* AppDelegate.swift */; };
 		85ED8E5C2AC49F5200023798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ED8E5B2AC49F5200023798 /* SceneDelegate.swift */; };
 		85ED8E5E2AC49F5200023798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ED8E5D2AC49F5200023798 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		85426B852AC5FC7B00C44F57 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		85426B8A2AC612DC00C44F57 /* UIImageView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utils.swift"; sourceTree = "<group>"; };
 		85ED8E562AC49F5200023798 /* ImageCaching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCaching.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85ED8E592AC49F5200023798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85ED8E5B2AC49F5200023798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 			path = "Image Cache Manager";
 			sourceTree = "<group>";
 		};
+		85426B892AC612B500C44F57 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				85426B8A2AC612DC00C44F57 /* UIImageView+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		85ED8E4D2AC49F5200023798 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		85ED8E582AC49F5200023798 /* ImageCaching */ = {
 			isa = PBXGroup;
 			children = (
+				85426B892AC612B500C44F57 /* Extensions */,
 				85426B872AC5FE2E00C44F57 /* Image Cache Manager */,
 				85ED8E6F2AC49F9200023798 /* UI */,
 				85ED8E6E2AC49F7400023798 /* Controller */,
@@ -175,6 +186,7 @@
 			files = (
 				85426B862AC5FC7B00C44F57 /* ImageCacheManager.swift in Sources */,
 				85ED8E5E2AC49F5200023798 /* ViewController.swift in Sources */,
+				85426B8B2AC612DC00C44F57 /* UIImageView+Utils.swift in Sources */,
 				85ED8E5A2AC49F5200023798 /* AppDelegate.swift in Sources */,
 				85ED8E5C2AC49F5200023798 /* SceneDelegate.swift in Sources */,
 			);
